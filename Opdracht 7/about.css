@@ -1,0 +1,16 @@
+body {
+    background-color: lavender;
+}
+
+.tittle {
+    font-family: cursive;
+    color:lightcoral;
+    text-align: center;
+}
+
+.footer {
+    border: solid 1px;
+    background-color: lightsalmon;
+    font-family: cursive;
+    font-size: 12px;
+}
