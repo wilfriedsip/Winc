@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title> Mijn Contact Pagina</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="Contact-title">Mijn Contact Pagina</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="link1.html">Link 1</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <p class="form1"><label>Uw Naam: <input type="text" /></label></p>
+        <p class="form1"><label>Uw Email: <input type="email" /></label></p>
+        <p class="form1"><label> Uw Bericht:<textarea name="Message"></textarea></label></p>
+        <p class="form1"><button type="submit">Verstuur</button></p>
+    </form>
+
+</body>

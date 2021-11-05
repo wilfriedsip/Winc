@@ -1,0 +1,27 @@
+body {
+    background-color: lavender;
+}
+
+.tittle {
+    font-family: cursive;
+    color:lightcoral;
+    text-align: center;
+}
+
+.footer {
+    border: solid 1px;
+    background-color: lightsalmon;
+    font-family: cursive;
+    font-size: 12px;
+}
+
+.navigation {
+    border: 1px #3f2211 solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.navigation li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
