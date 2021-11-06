@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title>Favorite Recipes</title>
+    <link rel="stylesheet" type="text/css" href="complex.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 style="font-size:50px">Favorite Recipes</h1>
+    </header>
+
+    <form class="contact-recipe" name="contact" method="POST" data-netlify="true">
+        <p><label>Name: <input type="text" /></label></p>
+        <p><label>Email: <input type="email" /></label></p>
+        <p><label>Telephone: <input type="tel" /></label></p>
+        <p><label>Age: <input type="text" /></label></p>
+        <p><label>Date of birth: <input type="date" /></label></p>
+        <p>Gender: <input type="radio" name="gender" value="men"><label>Men</label>
+            <input type="radio" name="gender" value="Woman"><label>Woman</label>
+            <input type="radio" name="gender" value="None"><label>Different</label>
+        </p>
+        <p>Favorite Cuisine:
+            <input type="checkbox" name="Cuisine" value="French"><label> French</label>
+            <input type="checkbox" name="Cuisine" value="Italian"><label> Italian</label>
+            <input type="checkbox" name="Cuisine" value="Spanish"><label> Spanish</label>
+            <input type="checkbox" name="Cuisine" value="Arabic"><label> Arabic</label>
+        </p>
+        <p><label>Favorite apron Color: <input type="color" /></label></p>
+        <p><label> Biography:<textarea name="Message"></textarea></label></p>
+        <p><label>Recipe Upload: <input type="file" /></label></p>
+        <p><label>Recipe Website: <input type="url" placeholder="https://example.com" /></label></p>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+</body>
+
+</html>
