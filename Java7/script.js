@@ -1,19 +1,35 @@
 
+// No Argument
 
-const paintWall = function (color, wall) {
+const paintWall = function () {
+
+    console.log("The wall has been painted red");
+
+};
+paintWall();
+
+
+//Single Argument
+
+const paintWall1 = function (color) {
 
     console.log("The wall has been painted " + color);
-    console.log("The north wall has been painted " + wall);
-    console.log("The south-east wall has been painted" + wall);
+
+    console.log("The wall has been painted " + color);
 };
 
-const color1 = "Green";
-const color2 = "Yellow";
-const northWall = "Orange";
-const southWall = "Grey";
+paintWall1("Green");
+paintWall1("Yellow");
 
+// Multiple Arguments
 
-paintWall(color2);
-paintWall(northWall);
+const paintWall2 = function (wallPlace, color) {
+    console.log("The " + wallPlace + "has been painted" + color);
+    console.log("The " + wallPlace + "has been painted" + color);
+}
 
+paintWall2("North", "Orange");
+paintWall2("South", "Grey");
+
+//6. // The order of arguments matters
 
