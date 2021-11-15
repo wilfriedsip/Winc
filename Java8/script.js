@@ -6,20 +6,22 @@ const biggerNumber = function (bigger) {
         console.log("False")
     }
 };
-biggerNumber(101);
+biggerNumber(99);
+biggerNumber(140);
 
-//Bouncer at a club
 
-const aiBouncer = function (amount, age) {
-    console.log("come in");
-    console.log("it's too busy now, come back later");
-    console.log("this is a club for adults");
+const aiBouncer = function (amountVisitors, ageVisitors) {
+
+    if (ageVisitors < 18) {
+        return "This is a club for adults";
+    }
+    if (amountVisitors > 500) {
+        return "It's too busy now, come back later";
+    } else {
+        return "Come in, have fun";
+    }
 }
 
-amount();
-age("");
-
-//Calculating the average
-
-
-
+console.log(aiBouncer(400, 0));
+console.log(aiBouncer(400, 19));
+console.log(aiBouncer(1400, 19));
