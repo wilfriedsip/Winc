@@ -9,6 +9,7 @@ const biggerNumber = function (bigger) {
 biggerNumber(99);
 biggerNumber(140);
 
+//Bouncer at a club
 
 const aiBouncer = function (amountVisitors, ageVisitors) {
 
