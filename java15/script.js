@@ -7,10 +7,15 @@ myButton.addEventListener("click", function () {
 });
 
 //Part 2
+const blueBackground = function () {
+    const bodyElement = document.body;
+    bodyElement.classList.add("red-background");
+};
+const changeColorButton = function () {
+    const changeColorButton = document.getElementById("buttonBackground");
+    changeColorButton.addEventListener("click", function () {
+        blueBackground();
+    });
+};
 
-
-var buttonBackground = document.getElementById("buttonBackground");
-
-buttonBackground.addEventListener("click", function () {
-    document.body.style.backgroundColor = "red";
-});
+changeColorButton();
