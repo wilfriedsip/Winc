@@ -6,6 +6,7 @@ myButton.addEventListener("click", function () {
     alert("Button Clicked");
 });
 
+
 //Part 2
 const blueBackground = function () {
     const bodyElement = document.body;
@@ -18,4 +19,18 @@ const changeColorButton = function () {
     });
 };
 
+
+const backColor = function () {
+    const bodyElement = document.body;
+    bodyElement.classList.toggle("red-background");
+};
+
+const goBackColor = function () {
+    const changeColorButton = document.getElementById("change-background-button");
+    changeColorButton.addEventListener("click", function () {
+        backColor();
+    });
+};
+
 changeColorButton();
+goBackColor();
