@@ -8,29 +8,31 @@ myButton.addEventListener("click", function () {
 
 
 //Part 2
-const blueBackground = function () {
-    const bodyElement = document.body;
-    bodyElement.classList.add("red-background");
-};
-const changeColorButton = function () {
-    const changeColorButton = document.getElementById("buttonBackground");
-    changeColorButton.addEventListener("click", function () {
-        blueBackground();
-    });
+/*
+const changeBlueBackground = function () {
+    const bodyBackground = document.body;
+    bodyBackground.classList.add("red-background");
 };
 
+const changeEventBlue = function () {
+    const colorButton = document.getElementById("buttonBackground");
+    colorButton.addEventListener("click", function () {
+        changeBlueBackground();
+    })
+}
+changeEventBlue();
+*/
+// Part 3
 
-const backColor = function () {
-    const bodyElement = document.body;
-    bodyElement.classList.toggle("red-background");
+const changeBlueBackgroundToggle = function () {
+    const bodyBackground = document.body;
+    bodyBackground.classList.toggle("red-background");
 };
 
-const goBackColor = function () {
-    const changeColorButton = document.getElementById("change-background-button");
-    changeColorButton.addEventListener("click", function () {
-        backColor();
-    });
-};
-
-changeColorButton();
-goBackColor();
+const changeEventBlue = function () {
+    const colorButton = document.getElementById("buttonBackground");
+    colorButton.addEventListener("click", function () {
+        changeBlueBackgroundToggle();
+    })
+}
+changeEventBlue();
